@@ -1,0 +1,6 @@
+B.Sc.ComputerScience
+
+S.No.   	    Name   	    TotalMark
+1   	     A.MAHADEVAN  	    1192
+2   	     J.Krishnamurti  	    1192
+3   	     K.HARIHARAN  	    1184
