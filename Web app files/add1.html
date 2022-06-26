@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>ADMISSION FORM</title>
+<script src="validate.js"></script>
+<style type="text/css">
+.bd { width: 100%;min-width: 700px; min-height: 800px;}
+#oval {
+      width: 100px;
+	  height: 50px;
+	  background: rgb(155,21,2);
+	  color: rgb(252,220,177);
+	  display: block;
+	  font: normal 13px Tahoma;
+	  line-height: 16px;
+	  padding-left: 11px;
+	  text-decoration: none;
+	  border-radius: 60px;
+	  
+	  }
+	  .b1{position: absolute; top: 2100px; left:390px;}
+	  .b2{position: absolute; top: 2100px; left:600px;}
+.pos1 { position: absolute; top: 100px; left:20px; border:none;}
+.pos2 { position: absolute; top: 700px; left: 20px;border:none;}
+.pos3 { position: absolute; top: 1200px; left: 20px;border:none;}
+.pos4 { position: absolute; top: 1650px; left: 20px;border:none;}
+.pos5 { position: absolute; top: 1900px; left: 20px;border:none;} 
+</style>
+</head>
+<body style="background: rgb(252,220,177)" class="bd">
+<form method="post" action="add.php" onsubmit="return formval(this,1)" enctype="multipart/form-data">
+<h1 style="color: rgb(155,21,2); font-family: cursive; font-size: xx-large">ADMISSION FORM</h1>
+<h3 style="color: rgb(155,21,2); font-family: cursive; font-size: x-large">
+<fieldset class="pos1">
+<legend>StudentDetails1</legend>
+<pre>
+Name:               <input type="text" name="xxxx"><br>
+Date of birth:      <input type="text" name="Dob"><br>
+Gender:             <select name="gen"><option value="none">--select--</option><option value="Male">MALE</option><option value="Female">FEMALE</option><select><br>
+Father Name:        <input type="text" name="Fname"><br>
+Father Occupation:  <input type="text" name="Foc"><br>
+Mother Name:        <input type="text" name="Mname"><br>
+Mother Occupation:  <input type="text" name="Moc"><br>
+Street:             <input type="text" name="Street"><br>
+Area:               <input type="text" name="Area"><br>
+Pincode:            <input type="text" name="Pin"><br>
+</pre>
+</fieldset>
+<fieldset class="pos2">
+<legend>StudentDetails2</legend>
+<pre>
+Nationality:     <select name="nat">
+<option value="none">--select--</option>
+<option value="Indian">INDIAN</option>
+<option value="O1">OTHERS</option>
+<select><br>
+Mother Tongue:   <select name="mtong">
+<option value="none">--select--</option>
+<option value="Tamil">TAMIL</option>
+<option value="English">ENGLISH</option>
+<option value="O2">OTHERS</option>
+<select><br>
+Religion:        <select name="relg">
+<option value="none">--select--</option>
+<option value="Hindu">HINDU</option>
+<option value="Muslim">MUSLIM</option>
+<option value="Christ">CHRISTIANITY</option>
+<option value="O3">Others</option>
+<select><br>
+Community:       <select name="comm">
+<option value="none">--select--</option>
+<option value="OC">OC</option>
+<option value="BC">BC</option>
+<option value="MBC">MBC</option>
+<option value="SS">SC/ST</option>
+<option value="DNC">DNC</option>
+<option value="O4">Others</option>
+</select><br>
+Native District: <select name="district">
+<option value="none">--select--</option>
+<option value="M">MADURAI</option>
+<option value="S">SIVAGANAGAI</option>
+<option value="V">VIRUDHUNAGAR</option>
+<option value="T">THENI</option>
+<option value="D">DINDUGUL</option>
+<option value="O5">Others</option>
+<select><br>
+Caste:           <input type="text" name="caste"><br>
+Mobile no:       <input type="text" name="mno"><br>
+EmailID:         <input type="text" name="eid"><br>
+</pre>
+</fieldset>
+<fieldset class="pos3">
+<legend>MarkDetails</legend>
+<pre>
+Marks in H.S. / CBSE -XII
+
+Language:                <input type="text" name="lan"><br>
+English:                 <input type="text" name="eng"><br>
+Subject1:                <input type="text" name="s1"><br>
+Subject2:                <input type="text" name="s2"><br>
+Subject3:                <input type="text" name="s3"><br>
+Subject4:                <input type="text" name="s4"><br>
+Month & Year of Passing: <input type="text" name="myp"><br>
+</pre>
+</fieldset>
+<fieldset class="pos4">
+<legend>CourseDetails</legend>
+<pre>
+Select your stream:       <select name="cat">
+<option value="none">--select--</option>
+<option value="reg">REGULAR</option>
+<option value="fin">SELF-FINANCE</option>
+<select><br>
+Select your UG major:     <select name="ugmajor">
+<option value="none">--select--</option>
+<option value="bcsc">B.Sc.ComputerScience</option>
+<option value="bmat">B.Sc.Mathematics</option>
+<option value="bphy">B.Sc.Physics</option>
+<option value="bche">B.Sc.Chemistry</option>
+<option value="bzoo">B.Sc.Zoology</option>
+<option value="bbot">B.Sc.Botany</option>
+<option value="btam">B.A.Tamil</option>
+<option value="beng">B.A.English</option>
+<option value="bbcs">B.Com.CS</option>
+<option value="bbca">B.Com.CA</option>
+</select><br>
+Select your 12th Group:   <select name="tgroup">
+<option value="none">--select--</option>
+<option value="cs">ComputerScience</option>
+<option value="bi">Biology</option>
+<option value="ac">Accounts</option>
+<option value="O6">Others</option>
+<select>
+</pre>
+</fieldset>
+<fieldset class="pos5">
+<legend>Uploads</legend>
+<pre>
+Upload your passport size photo: <input type="file" name="u1">
+Upload your Marksheet photo:     <input type="file" name="u2">
+</pre>
+</fieldset>
+<input type="submit" value="APPLY" id="oval" class="b1" >
+<input type="button" value="BACK" id="oval" class="b2" onclick="location.href='Entry.php'">
+</h3>
+<br>
+<div id="vald" style="color: rgb(155,21,2)"></div>
+</form>
+
+</body>
+</html>
